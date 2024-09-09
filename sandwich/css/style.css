@@ -1,0 +1,1322 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: mountHills;
+    src: url(../fonts/Mount\ Hills.otf);
+}
+
+body {
+    background-color: #fffaf0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/*!!!!!!!!!!!!!!!!! DESKTOP MEDIA QUIERY!!! !!!!!!!!!!!!!!!!!!*/
+
+@media only screen and (min-width: 980px) {
+/****** header section**** */
+
+header {
+    margin: 0;
+    background-image: url(../img/background-05.png);
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.container {
+    height: 72%;
+    width: 78%;
+    max-height: 700px;
+    max-width: 1100px;
+    /* border: 1px solid white; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+}
+
+
+.logo {
+    width: 80%;
+    margin-left: 8%;
+}
+
+/****** sandwich illustration section  ******/
+
+.panini {
+    height: auto;
+}
+
+.panini h1 {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c7e0a3;
+    text-shadow: 4px 3px 0 #dc7263;
+
+}
+
+.panini h3 {
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    color:#dc7263;
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    z-index: 10;
+   
+}
+
+.sandwich-content {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.sandwich-container {
+     width: 50%;
+     max-width: 1100px;
+     height: 50%;
+     /* position: relative;
+     left: 50%; */
+     overflow: hidden;
+}
+
+#obj {
+    overflow: hidden;
+    z-index: 29;
+    position: relative;
+}
+
+.ingredient {
+    background-color: #dc7263;
+    padding: 2%;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 2%;
+    margin-left: 4%;
+}
+
+.descriptions {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+
+.descriptions-title {
+    font-family: mountHills;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.descriptions-body {
+    margin: 0;
+    padding: 0;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+/* reveal */
+.reveal {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.reveal-ingredient {
+    background-color: #dc7263;
+    padding: 2%;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 2%;
+    margin-left: 4%;
+}
+
+.reveal-title {
+    font-family: mountHills;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.reveal-body {
+    margin: 0;
+    padding: 0;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+
+/** body section */
+
+.bodycopy {
+    background-image: url(../img/body-bg.png);
+    width: 100%;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+}
+
+.bodyContain {
+    /* background-color: lightblue; */
+    margin: 0 auto;
+    width: 78%;
+    max-width: 1100px;
+    /* padding: 10px; */
+    text-align: justify;
+    flex-wrap: wrap;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(63, 48, 48);
+}
+
+.bodyContain h1 {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(63, 48, 48);
+}
+
+/* *Infographic section */
+
+
+.infographic {
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    background-image: url(../img/paperbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* us section */
+
+.us {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.us-flag{
+    max-width: 40%;
+    height: 100%;
+}
+
+.us-text{
+    max-width: 58%;
+    height: 100%;
+    position: relative;
+    left: 5%;}
+
+.na-uk {
+    overflow: hidden;
+    max-width: 88%;
+    margin-left: 7%;;
+    margin-top: 8%;
+}
+
+.uk {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.uk-flag {
+    max-width: 40%;
+    height: 100%;
+}
+
+.uk-text {
+    max-width: 58%;
+    height: 100%;
+}
+
+.graph {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.graph-img {
+    max-width: 34%;
+    height: 100%;
+}
+
+.graph-text {
+    max-width: 40%;
+    height: 100%;
+    margin-left: 4%;
+}
+
+.market {
+    overflow: hidden;
+}
+
+.market-table {
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+   margin-left: 5%;
+   margin-top: 10%;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+}
+
+.pizza {
+    position: relative;
+    z-index: 2;
+    bottom: 450px;
+    margin-left: 2%;
+    max-width: 20%;
+}
+
+.mini-sandwich {
+    position: relative;
+    z-index: 2;
+    bottom: 100px;
+    left: 50%;
+    margin-left: 2%;
+    max-width: 20%;
+}
+
+.northAmerica {
+    overflow: hidden;
+}
+
+/* *map section */
+
+.map {
+    width: 100%;
+    background-color: #dc7263;
+    height: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.mapContainer {
+    width: 1100px;
+    max-width: 1100px;
+}
+
+.mapTitle {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#restaurant {
+    font-size: 2rem;
+    margin-top: -3%;
+}
+
+.map p {
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    text-align: center
+}
+
+.mapouter {
+    margin-left: auto;
+    margin-right: auto
+}
+
+/** video */
+
+.video {
+    width: 100%;
+    background-color: #fce5ae;
+    height: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video h1 {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+}
+
+.videoContain iframe {
+  margin: auto;
+  display: block;
+
+}
+/* footer */
+
+footer {
+    height: 17rem;
+    background-image: url(../img/paperbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footerContent {
+    margin-top: 6%;
+}
+
+footer p {
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    margin-top: 5%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #dc7263;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(63, 48, 48);
+    transition: 0.3s;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+}
+
+}
+
+
+
+
+
+/*!!! TABLET MEDIA QUERY */
+
+@media only screen and (min-width: 601px) and (max-width: 979px) {
+
+/****** header section**** */
+
+header {
+    margin: 0;
+    background-image: url(../img/background-05.png);
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -100px;
+    /* overflow: hidden; */
+}
+
+.container {
+    height: 72%;
+    width: 78%;
+    max-height: 700px;
+    max-width: 1100px;
+    /* border: 1px solid white; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+}
+
+
+.logo {
+    width: 80%;
+    margin-left: 8%;
+}
+
+/****** sandwich illustration section  ******/
+.panini {
+    height: 140vh;
+}
+.panini h1 {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c7e0a3;
+    text-shadow: 4px 3px 0 #dc7263;
+
+}
+
+.panini h3 {
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    color:#dc7263;
+    position: absolute; 
+    z-index: 10;
+    top: 57rem;
+    left: 33.5rem;
+}
+
+.sandwich-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.sandwich-container {
+     width: 50%;
+     max-width: 1100px;
+     height: 50%;
+     /* position: relative;
+     left: 50%; */
+     overflow: hidden;
+}
+
+#obj {
+    overflow: hidden;
+    margin-top: 20%;
+    z-index: 29;
+    position: relative;
+    left: 2rem;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 8%;
+    margin-left: 2%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+
+.ingredient {
+    background-color: #dc7263;
+    padding: 2%;
+    border-radius: 15px;
+    z-index: 2;
+    width: 40%;
+    height: 12rem;
+    margin: 2%;
+}
+
+.descriptions-title {
+    font-family: mountHills;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.descriptions-body {
+    margin: 0;
+    padding: 0;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+/* reveal content */
+
+.reveal {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 8%;
+    margin-left: 2%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.reveal-ingredient {
+    background-color: #dc7263;
+    padding: 2%;
+    border-radius: 15px;
+    z-index: 2;
+    width: 40%;
+    height: 12rem;
+    margin: 2%;
+}
+
+.reveal-title {
+    font-family: mountHills;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.reveal-body {
+    margin: 0;
+    padding: 0;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+/* body copy section */
+
+
+.bodycopy {
+    background-image: url(../img/body-bg.png);
+    width: 100%;
+    /* background-position-y: -200px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
+}
+
+.bodyContain {
+    /* background-color: lightblue; */
+    margin: 0 auto;
+    width: 78%;
+    max-width: 1100px;
+    /* padding: 10px; */
+    text-align: justify;
+    flex-wrap: wrap;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(63, 48, 48);
+}
+
+.bodyContain h1 {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(63, 48, 48);
+}
+
+
+/* *Infographic section */
+
+
+.infographic {
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    background-image: url(../img/paperbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* us section */
+
+.us {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.us-flag{
+    max-width: 40%;
+    height: 100%;
+}
+
+.us-text{
+    max-width: 58%;
+    height: 100%;
+    position: relative;
+    left: 5%;}
+
+.na-uk {
+    overflow: hidden;
+    max-width: 88%;
+    margin-left: 7%;;
+    margin-top: 8%;
+}
+
+.uk {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.uk-flag {
+    max-width: 40%;
+    height: 100%;
+}
+
+.uk-text {
+    max-width: 58%;
+    height: 100%;
+}
+
+.graph {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.graph-img {
+    max-width: 34%;
+    height: 100%;
+}
+
+.graph-text {
+    max-width: 40%;
+    height: 100%;
+    margin-left: 4%;
+}
+
+.market {
+    overflow: hidden;
+}
+
+.market-table {
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+   margin-left: 5%;
+   margin-top: 10%;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+}
+
+.pizza {
+    position: relative;
+    z-index: 2;
+    bottom: 450px;
+    margin-left: 2%;
+    max-width: 20%;
+}
+
+.mini-sandwich {
+    position: relative;
+    z-index: 2;
+    bottom: 100px;
+    left: 50%;
+    margin-left: 2%;
+    max-width: 20%;
+}
+
+.northAmerica {
+    overflow: hidden;
+}
+
+/* *map section */
+
+.map {
+    width: 100%;
+    background-color: #dc7263;
+    height: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.mapContainer {
+    width: 1100px;
+    max-width: 1100px;
+}
+
+.mapTitle {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#restaurant {
+    font-size: 2rem;
+    margin-top: -3%;
+}
+
+.map p {
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    text-align: center
+}
+
+.mapouter {
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/** video */
+
+.video {
+    width: 100%;
+    background-color: #fce5ae;
+    height: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video h1 {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+}
+
+.videoContain iframe {
+  margin: auto;
+  display: block;
+
+}
+/* footer */
+
+footer {
+    height: auto;
+    background-image: url(../img/paperbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footerContent {
+    margin-top: 3%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #dc7263;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(63, 48, 48);
+    transition: 0.3s;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+
+
+ }
+
+
+
+
+ /* !!!!!!!!!!! MOBILE MEDIA QUERY !!!!!!!!!!! */
+
+
+@media only screen and (max-width: 600px) {
+
+
+/****** header section**** */
+
+header {
+    margin: 0;
+    background-image: url(../img/background-05.png);
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -100px;
+    /* overflow: hidden; */
+}
+
+.container {
+    height: 72%;
+    width: 78%;
+    max-height: 700px;
+    max-width: 1100px;
+    /* border: 1px solid white; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+}
+
+
+.logo {
+    width: 90%;
+    margin-left: 8%;
+}
+
+
+/****** sandwich illustration section  ******/
+.panini {
+    height: 63rem;
+}
+.panini h1 {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c7e0a3;
+    text-shadow: 4px 3px 0 #dc7263;
+
+}
+
+.panini h3 {
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    color:#dc7263;
+    text-align: center;
+   
+}
+
+.sandwich-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.sandwich-container {
+     width: 50%;
+     max-width: 1100px;
+     height: 50%;
+     /* position: relative;
+     left: 50%; */
+     overflow: hidden;
+}
+
+#obj {
+    overflow: hidden;
+    margin-top: 80%;
+    z-index: 29;
+    position: relative;
+   left: 1rem;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 8%;
+    margin-left: 2%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+
+.ingredient {
+    background-color: #dc7263;
+    padding: 2%;
+    border-radius: 15px;
+    z-index: 2;
+    width: 40%;
+    height: auto;
+    margin: 2%;
+}
+
+.descriptions-title {
+    font-family: mountHills;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.descriptions-body {
+    margin: 0;
+    padding: 0;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+/* reveal content */
+
+.reveal {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 8%;
+    margin-left: 2%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+
+.reveal-ingredient {
+    background-color: #dc7263;
+    padding: 2%;
+    border-radius: 15px;
+    z-index: 2;
+    width: 40%;
+    height: auto;
+    margin: 2%;
+}
+
+.reveal-title {
+    font-family: mountHills;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.reveal-body {
+    margin: 0;
+    padding: 0;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+
+.tomato-reveal {
+    position: relative;
+    top: 3rem;
+}
+
+.ham-reveal {
+    position: relative;
+    top: 4.5rem;
+}
+
+.mayo-reveal {
+    position: relative;
+    top: 4.5rem;
+}
+
+/* body copy section */
+
+
+.bodycopy {
+    background-image: url(../img/body-bg.png);
+    width: 100%;
+    /* background-position-y: -200px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
+}
+
+.bodyContain {
+    /* background-color: lightblue; */
+    margin: 0 auto;
+    width: 78%;
+    max-width: 1100px;
+    /* padding: 10px; */
+    text-align: justify;
+    flex-wrap: wrap;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(63, 48, 48);
+}
+
+.bodyContain h1 {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(63, 48, 48);
+}
+
+/* *Infographic section */
+
+
+.infographic {
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    background-image: url(../img/paperbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* us section */
+
+.us {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.us-flag{
+    max-width: 40%;
+    height: 100%;
+}
+
+.us-text{
+    max-width: 58%;
+    height: 100%;
+    position: relative;
+    left: 5%;}
+
+.na-uk {
+    overflow: hidden;
+    max-width: 88%;
+    margin-left: 7%;;
+    margin-top: 8%;
+}
+
+.uk {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.uk-flag {
+    max-width: 40%;
+    height: 100%;
+}
+
+.uk-text {
+    max-width: 58%;
+    height: 100%;
+}
+
+.graph {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.graph-img {
+    max-width: 34%;
+    height: 100%;
+}
+
+.graph-text {
+    max-width: 40%;
+    height: 100%;
+    margin-left: 4%;
+}
+
+.market {
+    overflow: hidden;
+}
+
+.market-table {
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+   margin-left: 5%;
+   margin-top: 10%;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+}
+
+.pizza {
+    position: relative;
+    z-index: 2;
+    bottom: 450px;
+    margin-left: 2%;
+    max-width: 20%;
+}
+
+.mini-sandwich {
+    position: relative;
+    z-index: 2;
+    bottom: 100px;
+    left: 50%;
+    margin-left: 2%;
+    max-width: 20%;
+}
+
+.northAmerica {
+    overflow: hidden;
+}
+
+/* *map section */
+
+.map {
+    width: 100%;
+    background-color: #dc7263;
+    height: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.mapContainer {
+    width: 1100px;
+    max-width: 1100px;
+}
+
+.mapTitle {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#restaurant {
+    font-size: 2rem;
+    margin-top: -3%;
+}
+
+#gmap_canvas {
+    width: 70%;
+    position: relative;
+    right: 22%;
+
+}
+.map {
+    overflow: hidden;
+}
+
+.map p {
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    text-align: center
+}
+
+
+
+/** video */
+
+.video {
+    width: 100%;
+    background-color: #fce5ae;
+    height: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video h1 {
+    font-family: mountHills;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+}
+
+.videoContain iframe {
+  margin: auto;
+  display: block;
+  width: 90%;
+
+}
+/* footer */
+
+footer {
+    height: auto;
+    background-image: url(../img/paperbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footerContent {
+    margin-top: 3%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #dc7263;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(63, 48, 48);
+    transition: 0.3s;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
